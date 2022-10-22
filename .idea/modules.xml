@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/rocketseat-graphql-api-code-first.iml" filepath="$PROJECT_DIR$/.idea/rocketseat-graphql-api-code-first.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../rocketseat-graphql-api-schema-first/.idea/rocketseat-graphql-api-one.iml" filepath="$PROJECT_DIR$/../rocketseat-graphql-api-schema-first/.idea/rocketseat-graphql-api-one.iml" />
     </modules>
   </component>
 </project>
