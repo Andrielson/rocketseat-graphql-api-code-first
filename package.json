@@ -5,6 +5,9 @@
   "repository": "git@github.com:andrielson/rocketseat-graphql-api-code-first.git",
   "author": "Andrielson Silva <andrielson@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "tsnd --respawn --transpile-only src/server.ts"
+  },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
     "@types/node": "^18.11.3",
