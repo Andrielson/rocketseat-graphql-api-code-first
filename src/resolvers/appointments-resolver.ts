@@ -1,8 +1,9 @@
-import {Arg, Mutation, Query, Resolver} from "type-graphql";
+import {Arg, FieldResolver, Mutation, Query, Resolver, Root} from "type-graphql";
 import {CreateAppointmentInput} from "../inputs/create-appointment-input";
 import {Appointment} from "../models/appointment";
+import {Customer} from "../models/customer";
 
-@Resolver()
+@Resolver(() => Appointment)
 export class AppointmentsResolver {
     private readonly appointments: Appointment[] = [];
 
@@ -16,6 +17,11 @@ export class AppointmentsResolver {
         const appointment = new Appointment(data.startsAt, data.endsAt);
         this.appointments.push(appointment);
         return appointment;
+    }
+
+    @FieldResolver(() => Customer)
+    async customer(@Root() appointment: Appointment) {
+        return new Customer('John Doe');
     }
 
 }
